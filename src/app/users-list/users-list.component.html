@@ -1,8 +1,11 @@
 <p>Приложение работает!</p>
 
 <mat-selection-list #user>
-    <mat-list-option *ngFor="let user of usersList">
-      {{user.name}}
+    <mat-list-option class="new" *ngFor="let user of usersList">
+      {{user.name}} 
+      {{user.username}} <br />
+      {{user.email}}
+      {{user.website}}
       <hr>
     </mat-list-option>
   </mat-selection-list>
