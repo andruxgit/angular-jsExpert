@@ -1,0 +1,12 @@
+<p>Приложение работает!</p>
+
+<mat-selection-list #user>
+    <mat-list-option *ngFor="let user of usersList">
+      {{user.name}}
+      <hr>
+    </mat-list-option>
+  </mat-selection-list>
+  
+  <p>
+    Options selected: {{user.selectedOptions.selected.length}}
+  </p>
